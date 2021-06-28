@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <title>Welcome to Pizza-Inn</title>
+</head>
+
+<body>
+    <div class="container" id="landing">
+        <div class="jumbotron" id="header">
+            <h2>Welcome to Pizza-Inn</h2>
+            <p> We offer a great collection of delicious pizzas</p>
+            <p> We hope you have a a great experience</p>
+        </div>
+        <h2>Select your pizza size below:</h2>
+        <div class="row" class="sizes" id="sizes">
+            <div class="col-md-4">
+                <img src="./img/medium.jpeg" alt="">
+                <p>This one is enough for one individual</p>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="size" id="small" value="Small"
+                        onclick="small(); crust(); toppings();">
+                    <label class="form-check-label" for="inlineRadio1">Small ($6.00)</label>
+                </div>
+
+            </div>
+            <div class="col-md-4">
+                <img src="./img/small.jpeg" alt="">
+                <p>This one is good for 3 or 4 people</p>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="size" id="medium" value="Medium"
+                        onclick="medium(); crust(); toppings();">
+                    <label class="form-check-label" for="inlineRadio2">Medium ($800)</label>
+                </div>
+
+            </div>
+            <div class="col-md-4">
+                <img src="./img/large.jpeg" alt="">
+                <p>This one is good for 6 or 7 people</p>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="size" id="large" value="Large"
+                        onclick="large(); crust(); toppings();">
+                    <label class="form-check-label" for="inlineRadio3">Large ($10.00)</label>
+                </div>
+
+            </div>
+        </div>
+        <br></br>
+
+        <h2>Select your Crust below:</h2>
+        <div class="row" id="crust">
+            <div class="col-md-3">
+                <img src="./img/crust1.jpeg" alt="">
+                <h6>Italian Crust</h6>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="crust" id="Italian" value="Italian">
+                    <label class="form-check-label" for="inlineRadio">
+                        <h5 id="italian-crust"></h5>
+                    </label>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <img src="./img/crust2.jpeg" alt="">
+                <h6>Thin Crust</h6>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="crust" id="Thin" value="Thin">
+                    <label class="form-check-label" for="inlineRadio">
+
+                        <h5 id="thin-crust"></h5>
+                    </label>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <img src="./img/crust3.jpeg" alt="">
+                <h6>Hard Crust</h6>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="crust" id="Hard" value="Hard">
+                    <label class="form-check-label" for="inlineRadio">
+                        <h5 id="hard-crust"></h5>
+                    </label>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <img src="./img/crust4.jpeg" alt="">
+                <h6>Thick Crust</h6>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="crust" id="Thick" value="Thick">
+                    <label class="form-check-label" for="inlineRadio">
+
+                        <h5 id="thick-crust"></h5>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <br></br>
+
+        <h2>Select your Toppings below:</h2>
+
+        <div class="row" id="toppingsx">
+            <div class="col-md-2">
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" name="toppings" id="toppings1">
+                    <label class="form-check-label" for="toppings">
+                        <div>Fruit Topping</div>
+                        <img src="./img/topping1.jpeg" alt="">
+                        <h5 id="fruit-topping"></h5>
+                    </label>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" name="toppings" id="toppings2">
+                    <label class="form-check-label" for="toppings">
+                        <img src="./img/topping2.jpeg" alt="">
+                        <div>Spinach Topping</div>
+                        <h5 id="spinach-topping"></h5>
+                    </label>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" name="toppings" id="toppings3">
+                    <label class="form-check-label" for="toppings">
+                        <div>Pepperoni</div>
+                        <img src="./img/topping3.jpeg" alt="">
+                        <h5 id="pepperoni-topping"></h5>
+                    </label>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" name="toppings" id="toppings4">
+                    <label class="form-check-label" for="toppings">
+                        <div>Tomato Topping</div>
+                        <img src="./img/topping4.jpeg" alt="">
+                        <h5 id="tomato-topping"></h5>
+                    </label>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" name="toppings" id="toppings5">
+                    <label class="form-check-label" for="toppings">
+                        <div>Kale Topping</div>
+                        <img src="./img/topping5.jpeg" alt="">
+                        <h5 id="kale-topping"></h5>
+                    </label>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" name="toppings" id="toppings6">
+                    <label class="form-check-label" for="toppings">
+                        <div>Cheese Topping</div>
+                        <img src="./img/topping6.jpeg" alt="">
+                        <h5 id="cheese-topping"></h5>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <br></br>
+        <div class="delivery">
+            <h3>Would you like to have your pizza delivered?</h3>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="delivery" id="yes" value="Yes"
+                    onclick="checkedToppings(); delivery();">
+                <label class="form-check-label" for="toppings">
+                    <div id="yes">YES</div>
+                </label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="delivery" id="no" value="no"
+                    onclick="checkedToppings();">
+                <label class="form-check-label" for="toppings">
+                    <div id="no">NO</div>
+                </label>
+            </div>
+        </div>
+        <div class="jumbotron">
+            <h2>Here is your order</h2>
+            <br></br>
+            <div class="row">
+                <div class="col-8">
+                    <h4 class="cart" id="cart"> <span class="price" style="color:black"><i class="shopping-cart"></i>
+                            <b></b></span>
+                    </h4>
+                    <p><a href="#">Pizza Size</a> <span class="price" id="size-price">$</span></p>
+                    <p><a href="#">Pizza Crust</a> <span class="price" id="crust-price">$</span></p>
+                    <p><a href="#">Pizza Toppings</a> <span class="price" id="topping-price">$</span></p>
+                    <p><a href="#">Delivery Fee</a> <span class="price" id="delivery-price">$</span></p>
+                    <hr>
+                    <p>Total <span class="price" id="total-price" style="color:black"><b>$</b></span></p>
+                </div>
+            </div>
+        </div>
+        <div class="jumbotron">
+            <input type="submit" onclick="location.href='#landing'; newFinalPrice(); " value="Order Another Pizza"
+                style="background-color: sandybrown;" class="btn" id="btnn">
+            <br></br>
+            <input type="submit" onclick="finalPrice();" value="Continue to checkout" class="btn" id="btnn">
+            <br></br>
+            <h4 class="total-charge">Your Total Charge is: <div class="total-charge" id="total-charge">ksh</div>
+            </h4>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script type='text/javascript' src="js/app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+html{
+    scroll-behavior: smooth;
+}
+.container{
+    /*height: 100vh; */
+    margin-bottom:4% ;
+}
+*{
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+}
+.jumbotron{
+    background-color: transparent;
+}
+#header{
+    background-image: url("../img/images.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 5%;
+    height: 200%;
+}
+#toppingsx img, #toppings2 img{
+   object-fit: contain;
+   max-width: 100%;
+}
+/* Check-out styles */
+#checkout{
+    background-image:linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.75)),
+    url("../img/pexels-rodolfo-clix-1596888.jpg");
+    background-repeat: no-repeat;
+background-size: cover;
+filter: alpha(opacity=80);
+}
+#btnn{
+    padding-right: 2%;
+}
+#checkout img{
+    opacity: 0.1;
+}
+span.price {
+    float: right;
+    color: grey;
+  }
+#cart{
+    text-decoration: underline ;
+    padding-left: 50%;
+}
+
+.row img{
+    padding-top: 20px;
+    padding-bottom: 10px;
+      }
+
+ /*** buttons ***/
+
+.btn {
+    padding-top: 0;
+    margin-top: 0%;
+    background-color: #4CAF50;
+    color: white;
+    margin-left: 20%;
+    margin-right: 25%;
+    border: none;
+    width: 30%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .btn:hover {
+    background-color: #45a049;
+    color: tomato;
+    transition: ease;
+  }
+
+  #cancel {
+    float:center;
+     margin-right: 0%; 
+     background-color: red;
+
+  }
+  .continue {
+    float:center;
+     margin-right: 3%; 
+     background-color: greenyellow;
+  }
+  /* ********************** */
+  
+  @media only screen and (max-width: 768px) {
+    [class*="col-"] {
+      width: 100%;
+    }
+    .btn{
+        font-size:70% ;
+  }}
+
+  .form-check{
+    image{
+      width: 15000px;
+    }
+  }
